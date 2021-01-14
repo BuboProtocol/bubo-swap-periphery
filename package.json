@@ -1,26 +1,30 @@
 {
-  "name": "pancakeswap-peripheral",
+  "name": "buboprotocol-peripheral",
   "version": "1.1.0-beta.0",
-  "description": "🎚 Peripheral smart contracts for interacting with pancake",
+  "description": "🎚 Peripheral smart contracts for interacting with bubo",
   "engines": {
     "node": ">=10"
   },
-  "homepage": "https://pancakeswap.finance",
+  "homepage": "https://bubo.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pancakeswap/pancake-swap-periphery.git"
+    "url": "https://github.com/BuboProtocol/bubo-swap-periphery.git"
   },
   "files": [
     "build",
     "contracts"
   ],
   "dependencies": {
-    "@uniswap/lib": "1.1.1",
+    "@pancakeswap-libs/pancake-swap-core": "git+https://github.com/pancakeswap/pancake-swap-core.git",
+    "@pancakeswap/pancake-swap-lib": "git+https://github.com/pancakeswap/pancake-swap-lib.git",
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "^1.0.1",
-    "truffle-hdwallet-provider": "^1.0.17",
-    "truffle-plugin-verify": "^0.4.0"
+    "dotenv": "^8.2.0",
+    "truffle-plugin-verify": "^0.5.4"
   },
   "devDependencies": {
+    "truffle-flattener": "^1.5.0",
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
